@@ -14,7 +14,7 @@ function Card(props) {
         }}
       >
         <div className='detail'>
-          <div className='id'>{props.id} product name</div>
+          <div className='id'>{props.title}</div>
           <div className='prize-text'>${props.prize}</div>
         </div>
       </div>

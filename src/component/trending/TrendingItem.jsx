@@ -68,6 +68,7 @@ function TrendingItem() {
                   image={item.itemImage}
                   id={item.itemid}
                   prize={item.prize}
+                  title={item.title}
                 />
               </div>
             );
