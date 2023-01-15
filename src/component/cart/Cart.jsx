@@ -150,17 +150,6 @@ function Cart() {
                       </td>
                     </tr>
                   </>
-                  {/* <tr className='cartitems-details'>
-                    <td>
-                      <div className='product_name'>
-                        <h2>{item.title}</h2>
-                        <p>{item.describtion.substring(0, 100)}</p>
-                      </div>
-                    </td>
-
-
-
-                  </tr> */}
                 </table>
               ))}
             </>
