@@ -1,0 +1,57 @@
+.subscribe-board{
+    margin-bottom: 5em;
+    
+}
+.board-content{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: min(500px , 95%);
+
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe-title{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: small;
+    margin-bottom: -0.8em;
+}
+
+.subscribe-desc{
+    font-size: smaller;
+    color: rgb(96, 89, 79);
+}
+
+.subscribe-inputfield{
+    display: flex;
+}
+
+.subscribe-input{
+    background: none;
+    width: 75%;
+    height: 3em;
+    font-size: small;
+    border: 1px solid rgb(237, 217, 195);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 2em;
+}
+
+.subscribe-btn{
+    width: max(25% , 70px);
+    border: 1px solid rgb(237, 217, 195);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #ea9b4d;
+    font-size: x-small;
+    color: aliceblue;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+

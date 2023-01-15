@@ -1,0 +1,66 @@
+.NavBar {
+  padding-inline: 2rem;
+  padding-block: max(1vw, 10px);
+  margin-bottom: auto;
+  width: 100%;
+  background-color: rgb(245, 236, 224);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  z-index: 10;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+.pages {
+  color: black;
+  display: flex;
+  gap: 3em;
+  font-size: 0.9rem;
+  font-weight: 400;
+  align-items: center;
+}
+.pages :hover {
+  color: #ea9b4d;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+.commerceImage div {
+  color: #ea9b4d;
+  font-size: 2rem;
+}
+
+.commerceImage div span {
+  color: black;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .pages {
+    display: none;
+  }
+  .nav-dropdown {
+    display: inline;
+  }
+
+  .showham {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background-color: #ea9b4d;
+    justify-content: center;
+    top: 55px;
+    width: 45%;
+    padding-block: 20px;
+    gap: 20px;
+  }
+  .showham :hover {
+    color: white;
+  }
+}

@@ -1,0 +1,137 @@
+.cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: bisque;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  position: fixed;
+  border-radius: 10px;
+  z-index: 12;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.cart_table {
+  background-color: bisque;
+  max-height: 50vh;
+  overflow-y: auto;
+  border-bottom: 0.1px solid rgb(94, 88, 88);
+}
+.cart_table table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+.topics {
+  position: sticky;
+  top: 0px;
+}
+
+.cart table tr th {
+  background-color: #ea9b4d;
+  border: none;
+  text-align: center;
+  font-size: small;
+  padding: 10px;
+  color: aliceblue;
+}
+.cart table tr td {
+  text-align: center;
+  padding: 10px 23px;
+}
+.product_name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+}
+.product_name h2 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: max(2vh, 1px);
+}
+.product_name p {
+  margin-top: 0px;
+  font-size: 90%;
+  color: rgb(89, 84, 84);
+}
+.product_image img {
+  max-width: 60px;
+  aspect-ratio: 1/1;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4%;
+  width: 100%;
+}
+.left_cart_footer {
+  display: flex;
+  gap: 5px;
+}
+
+.enter_coupen {
+  border: none;
+  padding: 9px 10px;
+  font-size: 11px;
+  width: 130px;
+  border-radius: 3px;
+}
+
+.apply_coupen {
+  padding: 9px 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.apply_coupen span:hover {
+  color: #e5913d;
+}
+.right_cart_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  font-size: 0.9rem;
+}
+.right_cart_footer hr {
+  width: 100%;
+  border-color: #ea9b4d;
+}
+.Cart_Subtotal {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0px;
+}
+.Cart_shipping {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.Cart_total {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+.checkout {
+  padding: 10px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.checkout:hover {
+  background-color: #e5913d;
+}
+.delete-button:hover {
+  color: #ea9b4d;
+}

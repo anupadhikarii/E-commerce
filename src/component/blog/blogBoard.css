@@ -1,0 +1,23 @@
+.blog-board{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 0%;
+    margin-bottom: 5em;
+}
+
+.title{
+    color: black;
+    font-weight: 800;
+    font-size: xx-large;
+}
+.horizontal-line{
+    border-color: rgb(228, 148, 50);
+    width: 7%;
+}
+.blog-post{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+.stickyBoard {
+  background-color: #f78d23;
+  box-shadow: 0px 3px 5px 1px rgb(109, 101, 101);
+  color: aliceblue;
+  padding: 10px 15px;
+  position: fixed;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: flex;
+  z-index: 80;
+}
+.number_of_added_cart {
+  position: absolute;
+  color: aliceblue;
+  font-size: 10px;
+  padding: 5%;
+  margin-left: 35%;
+  margin-top: 15%;
+}

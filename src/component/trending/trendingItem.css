@@ -1,0 +1,50 @@
+.trendingitem{
+    padding-top: 3%;
+    background: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.titile{
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.active-mini-nav{
+    background-color: rgb(228, 148, 50);
+    color: aliceblue;
+}
+
+.miniNav{
+    display: flex;
+    text-transform: uppercase;
+    gap: max(4vw , 5px);
+    
+}
+.mini-nav-content{
+    padding-block: 10px;
+    padding-inline: max(10px , 1vw);
+    border-radius: 5%;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.mini-nav-content:hover{
+    background-color: rgb(228, 148, 50);
+    color: aliceblue;
+}
+
+.mini-nav-content:active{
+    background-color: rgb(228, 148, 50);
+    color: aliceblue;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}

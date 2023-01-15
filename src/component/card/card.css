@@ -1,0 +1,28 @@
+.card {
+  height: 20em;
+  width: 15em;
+  margin: 2em;
+  object-fit: contain;
+  background-color: white;
+  justify-content: baseline;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.2s;
+  margin-top: 0px;
+}
+.card:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.detail {
+  display: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  height: 15%;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+}

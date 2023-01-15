@@ -1,0 +1,34 @@
+.blog-card {
+  background-color: rgb(245, 236, 224);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.blog-card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.blog-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  background-color: rgb(245, 236, 224);
+  gap: 0.6em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.detail-date {
+  color: rgb(134, 132, 127);
+  font-size: small;
+}
+.detail-title {
+  font-weight: 600;
+}
+.detail-title:hover {
+  color: #ea9b4d;
+}
+.continue {
+  font-size: small;
+  color: rgb(71, 70, 68);
+  cursor: pointer;
+}

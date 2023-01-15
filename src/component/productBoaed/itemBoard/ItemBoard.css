@@ -1,0 +1,44 @@
+.sub_class {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3%;
+}
+
+.product-image img {
+  width: max(2vh, 100%);
+  height: max(2vh, 300px);
+}
+
+.product-information {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.product-title {
+  font-size: max(2vh, 40px);
+  font-weight: 700;
+}
+
+.product-ratting {
+  display: flex;
+  gap: 1rem;
+}
+
+.product-describtion {
+  text-align: start;
+  color: rgb(53, 52, 52);
+  font-size: max(1vh, 20px);
+}
+
+.add-to-card {
+  margin-top: 3%;
+  background-color: #ea9b4d;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}

@@ -1,0 +1,26 @@
+/** @format */
+
+.product-navline {
+  background-color: bisque;
+  padding: min(1vh, 1px) min(1vh, 10px);
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+.product-navline ul {
+  display: flex;
+  padding: 0%;
+  justify-items: flex-start;
+  gap: 1rem;
+}
+.photo {
+  display: flex;
+  font-size: max(1vh, 13px);
+  gap: 3px;
+  color: rgb(63, 57, 57);
+}
+.product-navline ul li {
+  list-style: none;
+  padding-inline: 1px;
+}
