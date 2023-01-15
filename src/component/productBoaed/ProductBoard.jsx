@@ -27,6 +27,7 @@ function ProductBoard() {
               image={detail.itemImage}
               id={detail.id}
               prize={detail.prize}
+              title={detail.title}
               setProducts={setItem}
             />
           ))}
