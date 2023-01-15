@@ -60,46 +60,110 @@ function Cart() {
       <div className='cart'>
         <div className='cart_table'>
           {cartLocalItem.length > 0 ? (
-            <table>
-              <tr className='topics'>
-                <th>Product</th>
-                <th>Name</th>
-                <th>unit Prize</th>
-                <th>Catagory</th>
-                <th>Quality</th>
-                <th>Total</th>
+            <>
+              <table className='on_big_screen'>
+                <tr className='topics'>
+                  <th>Product</th>
+                  <th>Name</th>
+                  <th>unit Prize</th>
+                  <th>Catagory</th>
+                  <th>Quality</th>
+                  <th>Total</th>
 
-                <th>
-                  <MdOutlineDeleteSweep size={"18%"} />
-                </th>
-              </tr>
-
-              {cartLocalItem.map((item) => (
-                <tr>
-                  <td>
-                    <div className='product_image'>
-                      <img src={item.itemImage} alt='Loading...' />
-                    </div>
-                  </td>
-                  <td>
-                    <div className='product_name'>
-                      <h2>{item.title}</h2>
-                      <p>{item.describtion.substring(0, 100)}</p>
-                    </div>
-                  </td>
-                  <td>${item.prize}</td>
-                  <td>{item.catagory}</td>
-                  <td>{item.ratting}/5</td>
-                  <td>${item.prize}</td>
-                  <td
-                    onClick={() => removeFromCart(item.itemid)}
-                    className='delete-button'
-                  >
-                    <MdOutlineDeleteSweep size={"30%"} />
-                  </td>
+                  <th>
+                    <MdOutlineDeleteSweep size={"18px"} />
+                  </th>
                 </tr>
+
+                {cartLocalItem.map((item) => (
+                  <tr className='cartitems-details'>
+                    <td>
+                      <div className='product_image'>
+                        <img src={item.itemImage} alt='Loading...' />
+                      </div>
+                    </td>
+                    <td>
+                      <div className='product_name'>
+                        <h2>{item.title}</h2>
+                        <p>{item.describtion.substring(0, 100)}</p>
+                      </div>
+                    </td>
+                    <td>${item.prize}</td>
+                    <td>{item.catagory}</td>
+                    <td>{item.ratting}/5</td>
+                    <td>${item.prize}</td>
+                    <td
+                      onClick={() => removeFromCart(item.itemid)}
+                      className='delete-button'
+                    >
+                      <MdOutlineDeleteSweep size={"18px"} />
+                    </td>
+                  </tr>
+                ))}
+              </table>
+              {cartLocalItem.map((item) => (
+                <table className='on_small_screen'>
+                  <>
+                    <tr className='on_small_screen_products'>
+                      <th>Product</th>
+                      <td>
+                        <div className='product_image'>
+                          <img src={item.itemImage} alt='Loading...' />
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr className='on_small_screen_name'>
+                      <th>Name</th>
+                      <div>
+                        <td className='product_title'>{item.title}</td>
+                        <td className='product_Description'>
+                          {item.describtion.slice(0, 120)}...
+                        </td>
+                      </div>
+                    </tr>
+                    <tr className='on_small_screen_unitPrize'>
+                      <th>unit Prize</th>
+                      <td>${item.prize}</td>
+                    </tr>
+                    <tr className='on_small_screen_catagory'>
+                      <th>Catagory</th>
+                      <td>{item.catagory}</td>
+                    </tr>
+                    <tr className='on_small_screen_quality'>
+                      <th>Quality</th>
+                      <td>{item.ratting}/5</td>
+                    </tr>
+                    <tr>
+                      <th>Total</th>
+                      <td>${item.prize}</td>
+                    </tr>
+
+                    <tr>
+                      <th>remove</th>
+
+                      <td
+                        onClick={() => removeFromCart(item.itemid)}
+                        className='delete-button'
+                      >
+                        <MdOutlineDeleteSweep size={"25px"} />
+                      </td>
+                    </tr>
+                  </>
+                  {/* <tr className='cartitems-details'>
+                    <td>
+                      <div className='product_name'>
+                        <h2>{item.title}</h2>
+                        <p>{item.describtion.substring(0, 100)}</p>
+                      </div>
+                    </td>
+
+
+
+                  </tr> */}
+                </table>
               ))}
-            </table>
+            </>
           ) : (
             <h1>Cart is Empty</h1>
           )}
